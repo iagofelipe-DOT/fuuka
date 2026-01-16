@@ -1,0 +1,254 @@
+
+:root {
+    --blue-pastel: #d9f0ff; 
+    --blue-mid:    #bfe8ff; 
+    --blue-light:  #9dd6ff; 
+    --gradient-angle: 135deg; 
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: #082033;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: auto;
+    align-content: top;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+
+    background-image:url('./assets/Blue_Animated_Banner.gif');
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(8px) brightness(0.3); 
+    
+    z-index: -1;
+    transform: scale(1.05);
+}
+
+h1, h2, .title {
+    font-weight: 700;
+}
+.body{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: left;
+    margin: auto;
+    width: 100dvw;
+    height: auto;
+    padding: 10px;
+    align-self: top;
+    gap: 20px;
+}
+.main{
+    background-color: var(--blue-light);
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    border:#082033 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+    gap: 20px;
+}
+.featured{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20dvw;
+    height: auto;
+    border:#082033 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+    gap: 10px;
+}
+.anon{
+    background-color: var(--blue-light);
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20dvw;
+    height: auto;
+    border:#082033 solid 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    align-self: left;
+    gap: 10px;
+}
+.anoninput{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 15dvw;
+    height: auto;
+    border:#082033 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: left;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row ;
+    justify-content:left;
+    align-items: center;
+    margin: auto;
+    border:#082033 solid 2px;
+    border-radius: 20px;
+    width: 256px;
+    height: 64px;
+    padding: 20px;
+    align-self: left;
+    gap: 10px;
+    background-color: #f0e6d2;
+    background-image: linear-gradient(to right, #f0e6d2 67%, transparent 100%), url(./assets/akita_neru.jpg); 
+    background-position: right center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.master{
+    display: flex;
+    flex-direction: row ;
+
+}
+.artwork,.artwork::before {
+    background-color: var(--blue-light);
+    left: 9dvw;
+    display: flex;
+    flex-direction: column ;
+    justify-content: left;
+    position: relative;
+    width: 50dvw;
+    height: auto;
+    border: #082033 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  
+ 
+  background-color: #ffffff;
+  padding: 16px;
+  
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  
+
+  resize: vertical; 
+  outline: none; 
+  transition: box-shadow 0.2s ease;
+  display: block;   
+  margin-bottom: 16px; 
+}
+
+
+textarea:focus {
+  background-color: #fbfbfb;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+textarea:placeholder {
+  color: #888;
+  font-weight: 500;
+}
+
+
+button {
+  border-radius: 50px;
+  padding: 10px 24px;
+  
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #000;
+  
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+  display: inline-block;
+}
+
+
+button:hover {
+  background-color: #5aa0d6;
+  transform: translateY(-1px); 
+  
+}
+
+
+button:active {
+  background-color: #2b1c00;
+  transform: translateY(0);
+  box-shadow: 0px 4px 12px, rgba(0, 0, 1, 0.15); 
+}
+
+button:disabled {
+  background-color: var(--blue-pastel);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+p, .content {
+    font-weight: 400;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #9dd6ff;
+    border: #082033 solid 2px;
+    border-radius: 8px;
+    color: #082033;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 0px 8px;
+    font-size: 12px;
+    min-height: auto;
+    white-space: nowrap;
+}
+
+#fuuka {
+    border: #082033 solid 2px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
